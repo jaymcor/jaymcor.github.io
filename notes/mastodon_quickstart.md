@@ -1,6 +1,6 @@
-# Streamlined Mastodon Quickstart
+# A Mastodon Quickstart
 
-There's not much to it, just:
+There's not much to it:
 
 1. Choose a server
 2. Setup your profile
@@ -13,41 +13,86 @@ There's not much to it, just:
 
 ## Right platform?
 
-* Focusing here on *Mastodon*
+* Focusing here on [Mastodon](https://joinmastodon.org/)
   * Most active platform in fediverse
   * Public discourse through short messages
-
-#### Other options
-
-* *PixelFed*: picture feeds
-* *WriteFreely*: longer blog posts
-* lots more interoperating in fediverse
+  * "Microblogging"
+* Other options
+  * [PixelFed](https://pixelfed.org/): image sharing / gallery
+  * [Funkwhale](https://funkwhale.audio/): audio streaming
+  * [PeerTube](https://joinpeertube.org/en): p2p WebRTC sharing/chatting
+  * [Pleroma](https://pleroma.social/): richer text with markdown
+  * [Misskey](https://misskey.ai/): different microblogging
+  * [WriteFreely](https://writefreely.org/): macroblogging
+  * [Lots more options](https://fediverse.party/) interoperable in the [Fediverse](https://en.wikipedia.org/wiki/Fediverse)
 
 ------------------------------------------------------------------
 
 ## Choosing a server/community
 
-* you don't need to run your own server
-  * unless you want to--not covered here
-* best bet: *just use the same server as your friends*
-* doesn't matter much which server you choose
-  * you can communicate with anybody
+* You **don't need to run your own server**
+  * Unless you want to... not covered here
+* Best bet: **just use the same server as your friends**
+* Doesn't matter much which server you choose
+  * You can communicate with anybody
 
 ### Considerations
 
-* Up-to-date software version
+* **Up-to-date** software version
 * Big&stable vs small&nimble
+* **Which language**
 * Server responsiveness
 * Moderator responsiveness
 * Max post text length (varies, often 500 chars)
-* Local code of conduct
-* Language
+* Local **code of conduct**
+* Extra features
 * Communities
-  * based on fields and interests
-  * based on identity
-  * based on location
+  * Based on fields and interests
+  * Based on identity
+  * Based on location
 
-### Checking out a server
+### Recommendation help
+
+* [Mastodon instance wizard](https://instances.social/)
+* [Coxy's list of mastodon instances](https://coxy.co/mastodon/)
+* [Mastodon instances help](https://mastodon.help/instances/en)
+* [The official mastodon server selection page](https://joinmastodon.org/servers)
+
+### Sampling of servers
+
+* Most any server allows general communication
+* Some gravitate toward specific interests
+
+Here's a few common ones, from large to small...
+
+If you're **really really lazy** you could just pick the first one that lets you create an account.
+
+* [mastodon.social](https://mastodon.social/about) -- the flagship
+* [mastodon.cloud](https://mastodon.cloud/about) -- general
+* [mas.to](https://mas.to/about) -- general
+* [c.im](https://c.im/about) -- general
+* [universeodon.com](https://universeodon.com/about) -- general
+* [masto.ai](https://masto.ai/about) -- general
+* [techhub.social](https://techhub.social/about) -- technologists
+* [fosstodon.org](https://fosstodon.org/about) -- open source
+* [infosec.exchange](https://infosec.exchange/about) -- infosec
+* [hachyderm.io](https://hachyderm.io/about) -- hackers, free/safe
+* [mindly.social](https://mindly.social/about) -- positivity
+* [ioc.exchange](https://ioc.exchange/about) -- infosec
+* [newsie.social](https://newsie.social/about) -- journalism
+* [mathstodon.xyz](https://mathstodon.xyz/about) -- math
+* [vis.social](https://vis.social/about) -- data visualization
+* [tabletop.social](https://tabletop.social/about) -- gaming
+* [toot.cafe](https://toot.cafe/about) -- web development
+* [wandering.shop](https://wandering.shop/about) -- sci fi and fantasy
+* [defcon.social](https://defcon.social/about) -- hacking poseurs
+* [fediscience.org](https://fediscience.org/about) -- actual scientists
+* [indieweb.social](https://indieweb.social/about) -- open independent web
+* [hci.social](https://hci.social/about/more) -- human computer interaction
+
+There are many many more servers available to choose from.
+
+### How to check out a server
 
 * Load the server's home page and click the "Local" feed link (or append `/public/local`)
   * There's at least something going on, right?
@@ -56,48 +101,11 @@ There's not much to it, just:
   * Comfortable neighborhood?  What kind of people?
   * Right level of friendliness, intellectualism, etc?
 * Read the server's about page (click about on lower left or append `/about`)
-  * *Important*: can you abide the *code of conduct*?
+  * **Important**: can you abide the **code of conduct**?
   * Do the server rules offer the protections you want?
   * Do the server rules offer the freedoms you want?
   * Sanity check moderated servers list...
     * Are there people you want to follow that would be filtered?
-
-### Some solid options
-
-Most servers allow general use, but some gravitate toward particular topics.
-
-Here are some interesting server choices, in order of large to small:
-
-* [mastodon.social](https://mastodon.social/about) -- the flagship
-* [masto.ai](https://masto.ai/about) -- general
-
-* [universeodon.com](https://universeodon.com/about) -- general
-* [mas.to](https://mas.to/about) -- general
-* [c.im](https://c.im/about) -- general
-
-* [techhub.social](https://techhub.social/about) -- technologists
-* [fosstodon.org](https://fosstodon.org/about) -- open source
-* [vis.social](https://vis.social/about) -- data visualization
-* [mindly.social](https://mindly.social/about) -- positivity
-* [toot.cafe](https://toot.cafe/about) -- web development
-* [wandering.shop](https://wandering.shop/about) -- sci fi and fantasy
-* [hachyderm.io](https://hachyderm.io/about) -- hackers, free/safe
-* [ioc.exchange](https://ioc.exchange/about) -- infosec
-* [fediscience.org](https://fediscience.org/about) -- actual scientists
-* [indieweb.social](https://indieweb.social/about) -- open independent web
-* [hci.social](https://hci.social/about/more) -- human computer interaction
-
-* [mathstodon.xyz](https://mathstodon.xyz/about) -- math
-* [defcon.social](https://defcon.social/about) -- hacking
-* [tabletop.social](https://tabletop.social/about) -- gaming
-* [infosec.exchange](https://infosec.exchange/about) -- infosec
-
-### Recommender sites
-
-* [Coxy's list of Mastodon Instances](https://coxy.co/mastodon/)
-* [Mastodon Instances Help](https://mastodon.help/instances/en)
-* [Instance wizard](https://instances.social/)
-* [The official mastodon server selection page](https://joinmastodon.org/servers)
 
 ------------------------------------------------------------------
 
@@ -105,9 +113,9 @@ Here are some interesting server choices, in order of large to small:
 
 #### Create an account
 
-* Use the "Create" or "Sign up" button on the server home page.
+* Use the "Create" or "Sign up" button on the server home page
   * In some cases it's immediate
-  * In other cases you have to go through hoops e.g. email ping.
+  * In other cases you have to go through hoops e.g. email ping
 * Add profile pic
 * Add sufficient info for disambiguation
 * Add whatever personal info you wish to divulge
@@ -131,7 +139,7 @@ It is common convention to introduce yourself via a post:
 #### Let your contacts know your handle
 
 * `@me@some.server` in text, `https://some.server/@me` in link
-  * e.g. [@jaymcor@mas.to](https://mas.to/@jaymcor)
+  * E.g. <a href="https://mas.to/@jaymcor">@jaymcor@mas.to</a>
 * Post on your other social media accounts like facebook, twitter, etc
 * Send emails as appropriate
 * Also consider adding the link to appropriate web pages, etc
@@ -142,20 +150,23 @@ It is common convention to introduce yourself via a post:
 
 #### Easy way
 
-* Whenever you see an interesting persona
-  * perhaps in a boosted post
-  * perhaps when perusing the local or federated feed
-* You can click their name for more info and to follow
-  * See what kind of things they post and how often
+* Whenever you see an interesting persona...
+  * Perhaps from a boosted post
+  * Perhaps when perusing the local or federated feed
+* Click their name for more info, click follow
+  * Have a look what kind of things they post and how often
+* FYI, you can also follow hashtags
 
 #### Manually
 
 * Use the search box
-  * you can type a name, e.g. 'James Corey'
-  * or you can type username and server, e.g. `@jaymcor@mas.to`
-  * click the "Follow" button next to the appropriate search result
+  * You can type a name, e.g. `James Corey`
+  * Or you can type username and server, e.g. `@jaymcor@mas.to`
+  * Click the "Follow" button next to the appropriate search result
 
-#### Some interesting users
+#### Sampling of accounts
+
+Some ideas to get you started:
 
 * [Astronomy Picture of the Day](https://botsin.space/@APoD) `@APoD@botsin.space`
 * [The European Commission](https://social.network.europa.eu/@EU_Commission) `@EU_Commission@social.network.europa.eu`
@@ -186,27 +197,27 @@ It is common convention to introduce yourself via a post:
 
 ## Write some things
 
-* text
-* images
-* links
-* polls
-* audio
-* video
+* Text
+* Images
+* Links
+* Polls
+* Audio
+* Video
 
 #### Mentioning other users
 
-* same server? `@jaymcor`
-* different server? `@jaymcor@mas.to`
+* Same server? `@jaymcor`
+* Different server? `@jaymcor@mas.to`
 
 #### Hashtags
 
-* please use them--helps people search and discover
-* inline or collected at end
-* don't go crazy
+* Use them--helps people search and discover
+* Inline or collected at end
+* Don't go crazy
 * CamelCase for clarity when appropriate
-* but it's not case sensitive
-* no hyphens just letters and numbers
-* examples:
+* But it's not case sensitive
+* No hyphens just letters and numbers
+* Examples:
   * `#politics`
   * `#dinosaurs`
   * `#FollowFriday`
@@ -214,36 +225,36 @@ It is common convention to introduce yourself via a post:
   * `#CatsOfMastodon`
   * `#caturday`
   * `#lichensubscribe`
-* find more examples by selecting Explore/Hashtags
+* Find more examples by selecting Explore/Hashtags
 
 #### Content warnings (CW)
 
-* use for traditional sensitive content
-* but also spoiler alerts, politics, ugly things like the TFG
-* also can use for "below the fold"
-  * perhaps to make skimming easier for the reader
-* some community variations in usage
+* Use for traditional sensitive content
+* But also for spoiler alerts, politics, ugly things like TFG
+* Also can use for "below the fold"
+  * Perhaps to make skimming easier for the reader
+* Some community variations in usage
 
 #### Provisos
 
-* for now, do not assume your posts are truly private
-  * even when you shared only with followers or an individual
-  * they flow through the fediverse unencrypted
-  * if secrecy is crucial, use a different tool
-  * analogous to email
+* For now, do not assume your posts are truly private
+  * Even when you shared only with followers or an individual
+  * They flow through the fediverse unencrypted
+  * If secrecy is crucial, use a different tool
+  * Analogous to email
 
 ------------------------------------------------------------------
 
 ## Boost some things
 
-* in other words re-posting or re-sharing
-* no annotations--you can read [the rationale](https://mastodon.social/@Gargron/99662106175542726) if curious
-* this is main way people discover new things and connect
-* remember, people always have the option to hide your boosts if they like
-* liking (the star) is nice but less crucial
-  * lets the author know you appreciate their post
-  * does not increase visibility
-  * it's not a competition
+* In other words re-posting or re-sharing
+* No annotations--you can read [the rationale](https://mastodon.social/@Gargron/99662106175542726) if curious
+* This is main way people discover new stuff and connect
+* Remember, people always have the option to hide your boosts if they like
+* Liking (the star) is nice but less crucial
+  * It lets the author know you appreciate their post
+  * But it does not increase visibility
+  * It's not a competition
 
 ------------------------------------------------------------------
 
@@ -256,13 +267,13 @@ There is no shortage of introductions on the web, a quick search away.
 Some examples:
 
 * [TechCrunch Beginner's Guide to Mastodon](https://techcrunch.com/2022/11/08/what-is-mastodon/)
-* [Increasingly Less Brief Guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon/)
 * [Per Axbom's Brief Mastodon Guide](https://axbom.com/mastodon-guide/)
+* [Increasingly Less Brief Guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon/)
 * [A Beginner’s Guide to Mastodon](https://buffer.com/resources/mastodon-social/)
 * [Mastodon: A Quick Start Guide for Journalists](https://robbmontgomery.com/mastodon-a-quick-start-guide-for-journalists/)
 
-#### Lots of help
+#### Beyond getting started
 
-* [jaymcor's Mastodon trivia](https://jaymcor.github.io/notes/mastodon_trivia.html)
-* [Everything I Know About Mastodon](https://blog.djnavarro.net/posts/2022-11-03_what-i-know-about-mastodon/)
 * [Fedi.Tips](https://fedi.tips/)
+* [jaymcor's Mastodon trivia](https://jaymcor.github.io/notes/mastodon_trivia.html) (work in progress)
+* [data witch's Everything I Know About Mastodon](https://blog.djnavarro.net/posts/2022-11-03_what-i-know-about-mastodon/)
