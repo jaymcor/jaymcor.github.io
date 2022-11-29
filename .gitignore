@@ -1,0 +1,12 @@
+a.out
+*.o
+*.pyc
+*.bak
+*~
+*.swp
+.vim/
+target/
+Cargo.lock
+*.log
+*.rs.rustfmt
+.gdb_history
