@@ -131,6 +131,7 @@ There are many many more servers available to choose from.
 It is common convention to introduce yourself via a post:
 
 * Use the `#introduction` hashtag
+* Additional hashtags might help with visibility
 * Synopsis of personal info on your profile
 * What sort of posts to expect from you
 * Some exciting hook to convince people to follow you?
