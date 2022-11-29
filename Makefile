@@ -1,6 +1,5 @@
-SUBDIRS = notes
 all:
-	make -C $(@:SUBDIRS)
+	make -C notes
 clean:
-	make -C $(@:SUBDIRS) clean
+	make -C notes clean
 .PHONY: all clean
