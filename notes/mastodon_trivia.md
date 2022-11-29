@@ -65,7 +65,22 @@ by the system you're linking to.
 
 I have not yet found a way to make it work.
 
+DM me at `@jaymcor@mas.to` if you figure out how.
+
+#### Facebook
+
+I have not yet found a way to make it work.
+
+Surprisingly frustrating, navigating the labyrinth hoping for a way to just
+update my profile to show a simple external contact URL.  DM me at
+`@jaymcor@mas.to` if you figure out how.
+
 #### GitHub
+
+Mostly github wants to remove the `rel="me"` part, but there is a way.
 
 Create a user repo, e.g. `jaymcor.github.io` and add your own raw `index.html`...
 
+### Fediverse
+
+It just works, linking to other fediverse accounts.
