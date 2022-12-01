@@ -2,12 +2,17 @@
 
 There's not much to it:
 
-1. Choose a server
+1. Choose a provider
 2. Setup your profile
 3. Follow some accounts or topics
 4. Write some things
 5. Boost some things
 6. Repeat steps 3-6
+
+There seem to be two typical roadbumps:
+
+* Confusion over choosing a provider (step 1)
+* Building connections (it's not automatic) (step 6)
 
 ------------------------------------------------------------------
 
@@ -33,10 +38,25 @@ There's not much to it:
 * You **don't need to run your own server**
   * Unless you want to... not covered here
 * Best bet: **just use the same server as your friends**
-* Doesn't matter much which server you choose
+* **Doesn't much matter** which server you choose
+  * It's like a big tree of nodes, all connected
   * You can communicate with anybody
+  * You can move your account later if you want
 
-### Considerations
+### Server recommendation help
+
+[The official joinmastodon.org page](https://joinmastodon.org/)
+
+* Provides a pretty easy interface
+* Most people just use that
+
+Here are some other tools for obtaining information about servers:
+
+* [Mastodon instance wizard](https://instances.social/)
+* [Coxy's list of mastodon instances](https://coxy.co/mastodon/)
+* [Mastodon instances help](https://mastodon.help/instances/en)
+
+### Selection considerations for the connoisseur
 
 * **Up-to-date** software version
 * Big&stable vs small&nimble
@@ -51,13 +71,6 @@ There's not much to it:
   * Based on identity
   * Based on location
 
-### Recommendation help
-
-* [Mastodon instance wizard](https://instances.social/)
-* [Coxy's list of mastodon instances](https://coxy.co/mastodon/)
-* [Mastodon instances help](https://mastodon.help/instances/en)
-* [The official mastodon server selection page](https://joinmastodon.org/servers)
-
 ### Sampling of servers
 
 * Most any server allows general communication
@@ -65,7 +78,11 @@ There's not much to it:
 
 Here's a few common ones, from large to small...
 
-If you're **really really lazy** you could just pick the first one that lets you create an account.
+If you're **really lazy** like me, you could just pick the first one that lets you create an account.
+
+However, if you have time, consider jumping straight to a server centered around a community that you want to be part of.
+
+#### Big general purpose servers
 
 * [mastodon.social](https://mastodon.social/about) -- the flagship
 * [mastodon.cloud](https://mastodon.cloud/about) -- general
@@ -73,6 +90,10 @@ If you're **really really lazy** you could just pick the first one that lets you
 * [c.im](https://c.im/about) -- general
 * [universeodon.com](https://universeodon.com/about) -- general
 * [masto.ai](https://masto.ai/about) -- general
+* ... (many)
+
+#### Smaller special interest servers
+
 * [techhub.social](https://techhub.social/about) -- technologists
 * [fosstodon.org](https://fosstodon.org/about) -- open source
 * [infosec.exchange](https://infosec.exchange/about) -- infosec
@@ -89,23 +110,22 @@ If you're **really really lazy** you could just pick the first one that lets you
 * [fediscience.org](https://fediscience.org/about) -- actual scientists
 * [indieweb.social](https://indieweb.social/about) -- open independent web
 * [hci.social](https://hci.social/about/more) -- human computer interaction
+* ... (many)
 
-There are many many more servers available to choose from.
-
-### How to check out a server
+### How to explore a server / community
 
 * Load the server's home page and click the "Local" feed link (or append `/public/local`)
   * There's at least something going on, right?
   * Evaluate the content subjectively...
-  * Can you see a few interesting random posts lying around?
+  * Can you see a few interesting random posts?
   * Comfortable neighborhood?  What kind of people?
   * Right level of friendliness, intellectualism, etc?
 * Read the server's about page (click about on lower left or append `/about`)
   * **Important**: can you abide the **code of conduct**?
   * Do the server rules offer the protections you want?
   * Do the server rules offer the freedoms you want?
-  * Sanity check moderated servers list...
-    * Are there people you want to follow that would be filtered?
+  * Extra credit: sanity check moderated servers list...
+    * Are there people or servers you want to follow that would be filtered?
 
 ------------------------------------------------------------------
 
@@ -137,7 +157,7 @@ It is common convention to introduce yourself via a post:
 * Some exciting hook to convince people to follow you?
   * An interesting picture might help
 
-#### Let your contacts know your handle
+#### Let your various contacts know your address
 
 * `@me@some.server` in text, `https://some.server/@me` in link
   * E.g. <a href="https://mas.to/@jaymcor">@jaymcor@mas.to</a>
@@ -149,6 +169,14 @@ It is common convention to introduce yourself via a post:
 
 ## Follow some interesting accounts
 
+You have to actively choose to follow people, otherwise your feed will
+happily remain barren.
+
+How barren or full is your preference.
+
+There are tools for finding friends from twitter, if you're migrating.
+Those are not documented here.
+
 #### Easy way
 
 * Whenever you see an interesting persona...
@@ -156,7 +184,6 @@ It is common convention to introduce yourself via a post:
   * Perhaps when perusing the local or federated feed
 * Click their name for more info, click follow
   * Have a look what kind of things they post and how often
-* FYI, you can also follow hashtags
 
 #### Manually
 
@@ -165,34 +192,44 @@ It is common convention to introduce yourself via a post:
   * Or you can type username and server, e.g. `@jaymcor@mas.to`
   * Click the "Follow" button next to the appropriate search result
 
-#### Sampling of accounts
+#### Starter pack
 
-Some ideas to get you started:
+You should definitely follow the admin for your server.
 
-* [Astronomy Picture of the Day](https://botsin.space/@APoD) `@APoD@botsin.space`
-* [The European Commission](https://social.network.europa.eu/@EU_Commission) `@EU_Commission@social.network.europa.eu`
-* [George Takei](https://universeodon.com/@georgetakei) `@georgetakei@universeodon.com`
-* [Jeff Tiedrich](https://mastodon.social/@jefftiedrich) `@jefftiedrich@mastodon.social`
-* [Greta Thunberg](https://mastodon.nu/@gretathunberg) `@gretathunberg@mastodon.nu`
-* [Neil Gaiman](https://mastodon.social/@neilhimself) `@neilhimself@mastodon.social`
-* [Stephen Fry](https://mastodonapp.uk/@stephenfry) `@stephenfry@mastodonapp.uk`
-* [Julia Evans](https://mastodon.social/@b0rk) `@b0rk@mastodon.social`
-* [John Conway](https://sauropods.win/@john) `@john@sauropods.win`
-* [Windell Oskay](https://mastodon.social/@oskay) `@oskay@mastodon.social`
-* [Molly White](https://hachyderm.io/@molly0xfff) `@molly0xfff@hachyderm.io`
-* [Matt Blaze](https://federate.social/@mattblaze) `@mattblaze@federate.social`
+Below are some random starting points you might try...
 
-#### Provisos
+* Institutional
+  * [Fedi.Tips](https://mstdn.social/@feditips) `@feditips@mstdn.social`
+  * [Astronomy Picture of the Day](https://botsin.space/@APoD) `@APoD@botsin.space`
+  * [The European Commission](https://social.network.europa.eu/@EU_Commission) `@EU_Commission@social.network.europa.eu`
+* 3 Random Famous people
+  * [George Takei](https://universeodon.com/@georgetakei) `@georgetakei@universeodon.com`
+  * [Greta Thunberg](https://mastodon.nu/@gretathunberg) `@gretathunberg@mastodon.nu`
+  * [Neil Gaiman](https://mastodon.social/@neilhimself) `@neilhimself@mastodon.social`
+* 3 Random Subject experts
+  * [Jay Rosen](https://mastodon.social/@jayrosen_nyu) `@jayrosen_nyu@mastodon.social`
+  * [Sheril Kirshenbaum](https://mastodon.social/@Sheril) `@Sheril@mastodon.social`
+  * [Matt Blaze](https://federate.social/@mattblaze) `@mattblaze@federate.social`
+
+#### Hashtags
+
+Yes, you can follow hashtags, just enter them in search or explore, open the feed, and hit the plus icon at the top.
+
+* `#BreadPosting`
+* `#lichensubscribe`
+* `#caturday`
+
+#### Please note
 
 * If somebody is posting too much, you can temporarily mute them
 * If somebody is boosting too much, you can hide just their boosts
 * Beware impersonation accounts
-  * the linked website verification method is very helpful
-    * if verification link checks, it is highlighted in green
-  * comparing vs google search results for the name can be helpful
-  * web of trust considerations apply
-    * did you get the link from someone you have met?
-    * how careful is that person?
+  * The linked website verification method is very helpful
+    * If verification checks, it is highlighted in green
+  * Compare vs google search results for the name if in doubt
+  * Web of trust considerations apply
+    * Did you get the link from someone you know IRL?
+    * How careful is that person?
 
 ------------------------------------------------------------------
 
@@ -212,7 +249,7 @@ Some ideas to get you started:
 
 #### Hashtags
 
-* Use them--helps people search and discover
+* Use them!  It helps people search and discover
 * Inline or collected at end
 * Don't go crazy
 * CamelCase for clarity when appropriate
@@ -220,12 +257,8 @@ Some ideas to get you started:
 * No hyphens just letters and numbers
 * Examples:
   * `#politics`
-  * `#dinosaurs`
   * `#FollowFriday`
-  * `#DogsOfMastodon`
-  * `#CatsOfMastodon`
-  * `#caturday`
-  * `#lichensubscribe`
+  * `#sporespondence`
 * Find more examples by selecting Explore/Hashtags
 
 #### Content warnings (CW)
@@ -267,6 +300,8 @@ There is no shortage of introductions on the web, a quick search away.
 
 Some examples:
 
+* [How to Join Mastodon (youtube)](https://www.youtube.com/watch?v=9ceO6N8OX_w)
+* [On Joining Mastodon...](https://medium.com/whither-news/on-joining-mastodon-d539eed5e41a)
 * [TechCrunch Beginner's Guide to Mastodon](https://techcrunch.com/2022/11/08/what-is-mastodon/)
 * [Per Axbom's Brief Mastodon Guide](https://axbom.com/mastodon-guide/)
 * [Increasingly Less Brief Guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon/)
@@ -276,5 +311,7 @@ Some examples:
 #### Beyond getting started
 
 * [Fedi.Tips](https://fedi.tips/)
-* [jaymcor's Mastodon trivia](https://jaymcor.github.io/notes/mastodon_trivia.html) (work in progress)
+* [Fedi Advanced Tips](https://fedi.tips/how-to-use-mastodon-and-the-fediverse-advanced-tips/)
+* [10 Hidden Useful Tricks for Mastodon Users](https://www.ubuntubuzz.com/2021/07/10-hidden-useful-tricks-for-mastodon.html)
+* [jaymcor's Random Mastodon Tips](https://jaymcor.github.io/notes/mastodon_trivia.html) (work in progress)
 * [data witch's Everything I Know About Mastodon](https://blog.djnavarro.net/posts/2022-11-03_what-i-know-about-mastodon/)

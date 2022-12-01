@@ -23,13 +23,18 @@
 <h1 id="a-mastodon-quickstart">A Mastodon Quickstart</h1>
 <p>There’s not much to it:</p>
 <ol type="1">
-<li>Choose a server</li>
+<li>Choose a provider</li>
 <li>Setup your profile</li>
 <li>Follow some accounts or topics</li>
 <li>Write some things</li>
 <li>Boost some things</li>
 <li>Repeat steps 3-6</li>
 </ol>
+<p>There seem to be two typical roadbumps:</p>
+<ul>
+<li>Confusion over choosing a provider (step 1)</li>
+<li>Building connections (it’s not automatic) (step 6)</li>
+</ul>
 <hr />
 <h2 id="right-platform">Right platform?</h2>
 <ul>
@@ -58,12 +63,26 @@
 <li>Unless you want to… not covered here</li>
 </ul></li>
 <li>Best bet: <strong>just use the same server as your friends</strong></li>
-<li>Doesn’t matter much which server you choose
+<li><strong>Doesn’t much matter</strong> which server you choose
 <ul>
+<li>It’s like a big tree of nodes, all connected</li>
 <li>You can communicate with anybody</li>
+<li>You can move your account later if you want</li>
 </ul></li>
 </ul>
-<h3 id="considerations">Considerations</h3>
+<h3 id="server-recommendation-help">Server recommendation help</h3>
+<p><a href="https://joinmastodon.org/">The official joinmastodon.org page</a></p>
+<ul>
+<li>Provides a pretty easy interface</li>
+<li>Most people just use that</li>
+</ul>
+<p>Here are some other tools for obtaining information about servers:</p>
+<ul>
+<li><a href="https://instances.social/">Mastodon instance wizard</a></li>
+<li><a href="https://coxy.co/mastodon/">Coxy’s list of mastodon instances</a></li>
+<li><a href="https://mastodon.help/instances/en">Mastodon instances help</a></li>
+</ul>
+<h3 id="selection-considerations-for-the-connoisseur">Selection considerations for the connoisseur</h3>
 <ul>
 <li><strong>Up-to-date</strong> software version</li>
 <li>Big&amp;stable vs small&amp;nimble</li>
@@ -80,20 +99,15 @@
 <li>Based on location</li>
 </ul></li>
 </ul>
-<h3 id="recommendation-help">Recommendation help</h3>
-<ul>
-<li><a href="https://instances.social/">Mastodon instance wizard</a></li>
-<li><a href="https://coxy.co/mastodon/">Coxy’s list of mastodon instances</a></li>
-<li><a href="https://mastodon.help/instances/en">Mastodon instances help</a></li>
-<li><a href="https://joinmastodon.org/servers">The official mastodon server selection page</a></li>
-</ul>
 <h3 id="sampling-of-servers">Sampling of servers</h3>
 <ul>
 <li>Most any server allows general communication</li>
 <li>Some gravitate toward specific interests</li>
 </ul>
 <p>Here’s a few common ones, from large to small…</p>
-<p>If you’re <strong>really really lazy</strong> you could just pick the first one that lets you create an account.</p>
+<p>If you’re <strong>really lazy</strong> like me, you could just pick the first one that lets you create an account.</p>
+<p>However, if you have time, consider jumping straight to a server centered around a community that you want to be part of.</p>
+<h4 id="big-general-purpose-servers">Big general purpose servers</h4>
 <ul>
 <li><a href="https://mastodon.social/about">mastodon.social</a> – the flagship</li>
 <li><a href="https://mastodon.cloud/about">mastodon.cloud</a> – general</li>
@@ -101,6 +115,10 @@
 <li><a href="https://c.im/about">c.im</a> – general</li>
 <li><a href="https://universeodon.com/about">universeodon.com</a> – general</li>
 <li><a href="https://masto.ai/about">masto.ai</a> – general</li>
+<li>… (many)</li>
+</ul>
+<h4 id="smaller-special-interest-servers">Smaller special interest servers</h4>
+<ul>
 <li><a href="https://techhub.social/about">techhub.social</a> – technologists</li>
 <li><a href="https://fosstodon.org/about">fosstodon.org</a> – open source</li>
 <li><a href="https://infosec.exchange/about">infosec.exchange</a> – infosec</li>
@@ -117,15 +135,15 @@
 <li><a href="https://fediscience.org/about">fediscience.org</a> – actual scientists</li>
 <li><a href="https://indieweb.social/about">indieweb.social</a> – open independent web</li>
 <li><a href="https://hci.social/about/more">hci.social</a> – human computer interaction</li>
+<li>… (many)</li>
 </ul>
-<p>There are many many more servers available to choose from.</p>
-<h3 id="how-to-check-out-a-server">How to check out a server</h3>
+<h3 id="how-to-explore-a-server-community">How to explore a server / community</h3>
 <ul>
 <li>Load the server’s home page and click the “Local” feed link (or append <code>/public/local</code>)
 <ul>
 <li>There’s at least something going on, right?</li>
 <li>Evaluate the content subjectively…</li>
-<li>Can you see a few interesting random posts lying around?</li>
+<li>Can you see a few interesting random posts?</li>
 <li>Comfortable neighborhood? What kind of people?</li>
 <li>Right level of friendliness, intellectualism, etc?</li>
 </ul></li>
@@ -134,9 +152,9 @@
 <li><strong>Important</strong>: can you abide the <strong>code of conduct</strong>?</li>
 <li>Do the server rules offer the protections you want?</li>
 <li>Do the server rules offer the freedoms you want?</li>
-<li>Sanity check moderated servers list…
+<li>Extra credit: sanity check moderated servers list…
 <ul>
-<li>Are there people you want to follow that would be filtered?</li>
+<li>Are there people or servers you want to follow that would be filtered?</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -173,7 +191,7 @@
 <li>An interesting picture might help</li>
 </ul></li>
 </ul>
-<h4 id="let-your-contacts-know-your-handle">Let your contacts know your handle</h4>
+<h4 id="let-your-various-contacts-know-your-address">Let your various contacts know your address</h4>
 <ul>
 <li><code>@me@some.server</code> in text, <code>https://some.server/@me</code> in link
 <ul>
@@ -185,6 +203,9 @@
 </ul>
 <hr />
 <h2 id="follow-some-interesting-accounts">Follow some interesting accounts</h2>
+<p>You have to actively choose to follow people, otherwise your feed will happily remain barren.</p>
+<p>How barren or full is your preference.</p>
+<p>There are tools for finding friends from twitter, if you’re migrating. Those are not documented here.</p>
 <h4 id="easy-way">Easy way</h4>
 <ul>
 <li>Whenever you see an interesting persona…
@@ -196,7 +217,6 @@
 <ul>
 <li>Have a look what kind of things they post and how often</li>
 </ul></li>
-<li>FYI, you can also follow hashtags</li>
 </ul>
 <h4 id="manually">Manually</h4>
 <ul>
@@ -207,37 +227,51 @@
 <li>Click the “Follow” button next to the appropriate search result</li>
 </ul></li>
 </ul>
-<h4 id="sampling-of-accounts">Sampling of accounts</h4>
-<p>Some ideas to get you started:</p>
+<h4 id="starter-pack">Starter pack</h4>
+<p>You should definitely follow the admin for your server.</p>
+<p>Below are some random starting points you might try…</p>
 <ul>
+<li>Institutional
+<ul>
+<li><a href="https://mstdn.social/@feditips">Fedi.Tips</a> <code>@feditips@mstdn.social</code></li>
 <li><a href="https://botsin.space/@APoD">Astronomy Picture of the Day</a> <code>@APoD@botsin.space</code></li>
 <li><a href="https://social.network.europa.eu/@EU_Commission">The European Commission</a> <code>@EU_Commission@social.network.europa.eu</code></li>
+</ul></li>
+<li>3 Random Famous people
+<ul>
 <li><a href="https://universeodon.com/@georgetakei">George Takei</a> <code>@georgetakei@universeodon.com</code></li>
-<li><a href="https://mastodon.social/@jefftiedrich">Jeff Tiedrich</a> <code>@jefftiedrich@mastodon.social</code></li>
 <li><a href="https://mastodon.nu/@gretathunberg">Greta Thunberg</a> <code>@gretathunberg@mastodon.nu</code></li>
 <li><a href="https://mastodon.social/@neilhimself">Neil Gaiman</a> <code>@neilhimself@mastodon.social</code></li>
-<li><a href="https://mastodonapp.uk/@stephenfry">Stephen Fry</a> <code>@stephenfry@mastodonapp.uk</code></li>
-<li><a href="https://mastodon.social/@b0rk">Julia Evans</a> <code>@b0rk@mastodon.social</code></li>
-<li><a href="https://sauropods.win/@john">John Conway</a> <code>@john@sauropods.win</code></li>
-<li><a href="https://mastodon.social/@oskay">Windell Oskay</a> <code>@oskay@mastodon.social</code></li>
-<li><a href="https://hachyderm.io/@molly0xfff">Molly White</a> <code>@molly0xfff@hachyderm.io</code></li>
+</ul></li>
+<li>3 Random Subject experts
+<ul>
+<li><a href="https://mastodon.social/@jayrosen_nyu">Jay Rosen</a> <code>@jayrosen_nyu@mastodon.social</code></li>
+<li><a href="https://mastodon.social/@Sheril">Sheril Kirshenbaum</a> <code>@Sheril@mastodon.social</code></li>
 <li><a href="https://federate.social/@mattblaze">Matt Blaze</a> <code>@mattblaze@federate.social</code></li>
+</ul></li>
 </ul>
-<h4 id="provisos">Provisos</h4>
+<h4 id="hashtags">Hashtags</h4>
+<p>Yes, you can follow hashtags, just enter them in search or explore, open the feed, and hit the plus icon at the top.</p>
+<ul>
+<li><code>#BreadPosting</code></li>
+<li><code>#lichensubscribe</code></li>
+<li><code>#caturday</code></li>
+</ul>
+<h4 id="please-note">Please note</h4>
 <ul>
 <li>If somebody is posting too much, you can temporarily mute them</li>
 <li>If somebody is boosting too much, you can hide just their boosts</li>
 <li>Beware impersonation accounts
 <ul>
-<li>the linked website verification method is very helpful
+<li>The linked website verification method is very helpful
 <ul>
-<li>if verification link checks, it is highlighted in green</li>
+<li>If verification checks, it is highlighted in green</li>
 </ul></li>
-<li>comparing vs google search results for the name can be helpful</li>
-<li>web of trust considerations apply
+<li>Compare vs google search results for the name if in doubt</li>
+<li>Web of trust considerations apply
 <ul>
-<li>did you get the link from someone you have met?</li>
-<li>how careful is that person?</li>
+<li>Did you get the link from someone you know IRL?</li>
+<li>How careful is that person?</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -256,9 +290,9 @@
 <li>Same server? <code>@jaymcor</code></li>
 <li>Different server? <code>@jaymcor@mas.to</code></li>
 </ul>
-<h4 id="hashtags">Hashtags</h4>
+<h4 id="hashtags-1">Hashtags</h4>
 <ul>
-<li>Use them–helps people search and discover</li>
+<li>Use them! It helps people search and discover</li>
 <li>Inline or collected at end</li>
 <li>Don’t go crazy</li>
 <li>CamelCase for clarity when appropriate</li>
@@ -267,12 +301,8 @@
 <li>Examples:
 <ul>
 <li><code>#politics</code></li>
-<li><code>#dinosaurs</code></li>
 <li><code>#FollowFriday</code></li>
-<li><code>#DogsOfMastodon</code></li>
-<li><code>#CatsOfMastodon</code></li>
-<li><code>#caturday</code></li>
-<li><code>#lichensubscribe</code></li>
+<li><code>#sporespondence</code></li>
 </ul></li>
 <li>Find more examples by selecting Explore/Hashtags</li>
 </ul>
@@ -286,7 +316,7 @@
 </ul></li>
 <li>Some community variations in usage</li>
 </ul>
-<h4 id="provisos-1">Provisos</h4>
+<h4 id="provisos">Provisos</h4>
 <ul>
 <li>For now, do not assume your posts are truly private
 <ul>
@@ -316,6 +346,8 @@
 <p>There is no shortage of introductions on the web, a quick search away.</p>
 <p>Some examples:</p>
 <ul>
+<li><a href="https://www.youtube.com/watch?v=9ceO6N8OX_w">How to Join Mastodon (youtube)</a></li>
+<li><a href="https://medium.com/whither-news/on-joining-mastodon-d539eed5e41a">On Joining Mastodon…</a></li>
 <li><a href="https://techcrunch.com/2022/11/08/what-is-mastodon/">TechCrunch Beginner’s Guide to Mastodon</a></li>
 <li><a href="https://axbom.com/mastodon-guide/">Per Axbom’s Brief Mastodon Guide</a></li>
 <li><a href="https://github.com/joyeusenoelle/GuideToMastodon/">Increasingly Less Brief Guide to Mastodon</a></li>
@@ -325,7 +357,9 @@
 <h4 id="beyond-getting-started">Beyond getting started</h4>
 <ul>
 <li><a href="https://fedi.tips/">Fedi.Tips</a></li>
-<li><a href="https://jaymcor.github.io/notes/mastodon_trivia.html">jaymcor’s Mastodon trivia</a> (work in progress)</li>
+<li><a href="https://fedi.tips/how-to-use-mastodon-and-the-fediverse-advanced-tips/">Fedi Advanced Tips</a></li>
+<li><a href="https://www.ubuntubuzz.com/2021/07/10-hidden-useful-tricks-for-mastodon.html">10 Hidden Useful Tricks for Mastodon Users</a></li>
+<li><a href="https://jaymcor.github.io/notes/mastodon_trivia.html">jaymcor’s Random Mastodon Tips</a> (work in progress)</li>
 <li><a href="https://blog.djnavarro.net/posts/2022-11-03_what-i-know-about-mastodon/">data witch’s Everything I Know About Mastodon</a></li>
 </ul>
 </body>
