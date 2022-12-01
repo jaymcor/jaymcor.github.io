@@ -22,7 +22,7 @@ There seem to be two typical roadbumps:
   * Most active platform in fediverse
   * Public discourse through short messages
   * "Microblogging"
-* Other options
+* Other options in the fediverse
   * [PixelFed](https://pixelfed.org/): image sharing / gallery
   * [Funkwhale](https://funkwhale.audio/): audio streaming
   * [PeerTube](https://joinpeertube.org/en): p2p WebRTC sharing/chatting
@@ -30,6 +30,8 @@ There seem to be two typical roadbumps:
   * [Misskey](https://misskey.ai/): different microblogging
   * [WriteFreely](https://writefreely.org/): macroblogging
   * [Lots more options](https://fediverse.party/) interoperable in the [Fediverse](https://en.wikipedia.org/wiki/Fediverse)
+* Other proprietary options
+  * Have you learned nothing?
 
 ------------------------------------------------------------------
 
@@ -39,48 +41,28 @@ There seem to be two typical roadbumps:
   * Unless you want to... not covered here
 * Best bet: **just use the same server as your friends**
 * **Doesn't much matter** which server you choose
-  * It's like a big tree of nodes, all connected
+  * Conceptually a big tree of nodes, all connected
   * You can communicate with anybody
-  * You can move your account later if you want
+  * You can move your account to a different provider any time
+    * It's designed in... only takes a couple clicks
 
 ### Server recommendation help
 
-[The official joinmastodon.org page](https://joinmastodon.org/)
+The official [joinmastodon.org](https://joinmastodon.org/) page
 
-* Provides a pretty easy interface
+* Provides a simple and easy interface
 * Most people just use that
 
-Here are some other tools for obtaining information about servers:
+Here are some other tools for scouting servers:
 
 * [Mastodon instance wizard](https://instances.social/)
 * [Coxy's list of mastodon instances](https://coxy.co/mastodon/)
 * [Mastodon instances help](https://mastodon.help/instances/en)
 
-### Selection considerations for the connoisseur
-
-* **Up-to-date** software version
-* Big&stable vs small&nimble
-* **Which language**
-* Server responsiveness
-* Moderator responsiveness
-* Max post text length (varies, often 500 chars)
-* Local **code of conduct**
-* Extra features
-* Communities
-  * Based on fields and interests
-  * Based on identity
-  * Based on location
-
 ### Sampling of servers
 
 * Most any server allows general communication
-* Some gravitate toward specific interests
-
-Here's a few common ones, from large to small...
-
-If you're **really lazy** like me, you could just pick the first one that lets you create an account.
-
-However, if you have time, consider jumping straight to a server centered around a community that you want to be part of.
+* Some also gravitate toward specific interests
 
 #### Big general purpose servers
 
@@ -112,7 +94,28 @@ However, if you have time, consider jumping straight to a server centered around
 * [hci.social](https://hci.social/about/more) -- human computer interaction
 * ... (many)
 
-### How to explore a server / community
+### Selection considerations for the connoisseur
+
+You could just pick any reasonably large (1000+) server.
+
+It will be fine.
+
+But if you want to check more carefully, consider:
+
+* **Up-to-date** software version
+* Big&stable vs small&nimble
+* **Which language**
+* Server responsiveness
+* Moderator responsiveness
+* Max post text length (varies, often 500 chars)
+* Local **code of conduct**
+* Extra features
+* Communities
+  * Based on fields and interests
+  * Based on identity
+  * Based on location
+
+### How to scrutinize a server / community
 
 * Load the server's home page and click the "Local" feed link (or append `/public/local`)
   * There's at least something going on, right?
