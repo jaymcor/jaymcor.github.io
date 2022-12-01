@@ -19,10 +19,16 @@ from there.
 
 ## Mobile apps
 
+### Any phone
+
+There's a PWA, so you get an experience similar to the browser one.
+Pretty good, worth installing.
+
 ### Android
 
 There are a bunch, here's what I've tried:
 
+* The Official Mastadon App
 * Tusky
 
 I'm currently using Tusky because I'm happy that the developer pissed off the
@@ -84,3 +90,33 @@ Create a user repo, e.g. `jaymcor.github.io` and add your own raw `index.html`..
 ### Fediverse
 
 It just works, linking to other fediverse accounts.
+
+----------------------------------------------------------------------------
+
+## Moving from one server to another
+
+### Why
+
+* new server is more fitting
+* old server has a problem
+* to taste the freedom
+
+### What happens?
+
+You move most of your data including past posts, the list of things
+you follow, local filters, bookmarks, etc.
+
+**You get to choose** whether followers of your old address will automatically
+be switched to point at your new address (in most cases you should do it).
+
+### How
+
+There's a process, it has to be done in a particular order
+
+* On old server, export your data
+* On new server, create the new account
+* On new server, goto Prefs/Account/MovingFrom and set old address as alias to new
+* On old server, goto Prefs/Account/MovingTo, put new address, old password
+* On new server, restore data as needed
+
+Check [the official docs](https://docs.joinmastodon.org/user/moving/) for an authoritative guide.

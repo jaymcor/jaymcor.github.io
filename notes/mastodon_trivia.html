@@ -29,9 +29,12 @@
 <p>You don’t need it, you can click on <em>Explore</em> on the right column and search from there.</p>
 <hr />
 <h2 id="mobile-apps">Mobile apps</h2>
+<h3 id="any-phone">Any phone</h3>
+<p>There’s a PWA, so you get an experience similar to the browser one. Pretty good, worth installing.</p>
 <h3 id="android">Android</h3>
 <p>There are a bunch, here’s what I’ve tried:</p>
 <ul>
+<li>The Official Mastadon App</li>
 <li>Tusky</li>
 </ul>
 <p>I’m currently using Tusky because I’m happy that the developer pissed off the fascists by being so eager to quelch them on his app at the drop of the hat, so now they seem to be angrily pushing FUD against Tusky. If the fascists are unhappy, that’s a sign of doing something right.</p>
@@ -60,5 +63,26 @@
 <p>Create a user repo, e.g. <code>jaymcor.github.io</code> and add your own raw <code>index.html</code>…</p>
 <h3 id="fediverse">Fediverse</h3>
 <p>It just works, linking to other fediverse accounts.</p>
+<hr />
+<h2 id="moving-from-one-server-to-another">Moving from one server to another</h2>
+<h3 id="why-1">Why</h3>
+<ul>
+<li>new server is more fitting</li>
+<li>old server has a problem</li>
+<li>to taste the freedom</li>
+</ul>
+<h3 id="what-happens">What happens?</h3>
+<p>You move most of your data including past posts, the list of things you follow, local filters, bookmarks, etc.</p>
+<p><strong>You get to choose</strong> whether followers of your old address will automatically be switched to point at your new address (in most cases you should do it).</p>
+<h3 id="how">How</h3>
+<p>There’s a process, it has to be done in a particular order</p>
+<ul>
+<li>On old server, export your data</li>
+<li>On new server, create the new account</li>
+<li>On new server, goto Prefs/Account/MovingFrom and set old address as alias to new</li>
+<li>On old server, goto Prefs/Account/MovingTo, put new address, old password</li>
+<li>On new server, restore data as needed</li>
+</ul>
+<p>Check <a href="https://docs.joinmastodon.org/user/moving/">the official docs</a> for an authoritative guide.</p>
 </body>
 </html>
