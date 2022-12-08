@@ -262,7 +262,7 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
   * `#politics`
   * `#FollowFriday`
   * `#sporespondence`
-* Find more examples by selecting Explore/Hashtags
+* See more examples by selecting Explore/Hashtags
 
 #### Content warnings (CW)
 
@@ -286,12 +286,12 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
 
 * In other words re-posting or re-sharing
 * No annotations--you can read [the rationale](https://mastodon.social/@Gargron/99662106175542726) if curious
-* This is main way people discover new stuff and connect
-* Remember, people always have the option to hide your boosts if they like
+* Best mechanism for discovery and cohesion
+* Don't worry, people have the option to hide your boosts if they like
 * Liking (the star) is nice but less crucial
   * It lets the author know you appreciate their post
   * But it does not increase visibility
-  * It's not a competition
+  * Not a competition
 
 ------------------------------------------------------------------
 

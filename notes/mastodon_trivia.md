@@ -17,6 +17,18 @@ from there.
 
 ----------------------------------------------------------------------------
 
+## Following a hashtag
+
+Be aware that some of the popular hashtags can have quite a few posts, and
+it might be more than you'd want to wade through on a daily basis.  That said,
+you just need to search for the hashtag (e.g. under the Explore window),
+select the hashtag to view it, and then click the little + box in the upper
+right hand corner.
+
+![Pictorial steps](../images/hashfollowsteps.png)
+
+----------------------------------------------------------------------------
+
 ## Mobile apps
 
 ### Any phone
