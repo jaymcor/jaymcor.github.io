@@ -27,6 +27,13 @@ right hand corner.
 
 ![Pictorial steps](../images/hashfollowsteps.png)
 
+Not every phone app knows how to follow hashtags.  Tusky supports it.  At time
+of writing, the official Mastodon app didn't seem to support it, however it
+works if you use Mastodon as a PWA (that is, use your phone's web browser to
+open your server's web page like you would on the desktop, then tell it to
+install the PWA on the phone, which will provide yet another "app" icon for
+accessing Mastodon on your phone).  The PWA implementation works pretty well.
+
 ----------------------------------------------------------------------------
 
 ## Mobile apps
