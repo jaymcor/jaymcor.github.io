@@ -160,6 +160,8 @@ It is common convention to introduce yourself via a post:
 * Some exciting hook to convince people to follow you?
   * An interesting picture might help
 
+Ideally, do this before you follow others (see below).
+
 #### Let your various contacts know your address
 
 * `@me@some.server` in text, `https://some.server/@me` in link
@@ -255,7 +257,7 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
 * Use them!  It helps people search and discover
 * Inline or collected at end
 * Don't go crazy
-* CamelCase for clarity when appropriate
+* CamelCase for clarity and screenreaders
 * But it's not case sensitive
 * No hyphens just letters and numbers
 * Examples:
