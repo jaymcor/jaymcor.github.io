@@ -89,6 +89,7 @@ Here are some other tools for scouting servers:
 * [tabletop.social](https://tabletop.social/about) -- gaming
 * [toot.cafe](https://toot.cafe/about) -- web development
 * [wandering.shop](https://wandering.shop/about) -- sci fi and fantasy
+* [mastodon.acm.org](https://mastodon.acm.org/about) -- computer science
 * [defcon.social](https://defcon.social/about) -- hacking poseurs
 * [fediscience.org](https://fediscience.org/about) -- actual scientists
 * [indieweb.social](https://indieweb.social/about) -- open independent web
@@ -166,7 +167,7 @@ Ideally, do this before you follow others (see below).
 #### Let your various contacts know your address
 
 * `@me@some.server` in text, `https://some.server/@me` in link
-  * E.g. <a href="https://mas.to/@jaymcor">@jaymcor@mas.to</a>
+  * E.g. <a href="https://mastodon.acm.org/@jaymcor">@jaymcor@mastodon.acm.org</a>
 * Post on your other social media accounts like facebook, twitter, etc
 * Send emails as appropriate
 * Also consider adding the link to appropriate web pages, etc
@@ -195,7 +196,7 @@ Those are not documented here.
 
 * Use the search box
   * You can type a name, e.g. `James Corey`
-  * Or you can type username and server, e.g. `@jaymcor@mas.to`
+  * Or you can type username and server, e.g. `@jaymcor@mastodon.acm.org`
   * Click the "Follow" button next to the appropriate search result
 
 #### Starter pack
@@ -251,7 +252,7 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
 #### Mentioning other users
 
 * Same server? `@jaymcor`
-* Different server? `@jaymcor@mas.to`
+* Different server? `@jaymcor@mastodon.acm.org`
 
 #### Hashtags
 

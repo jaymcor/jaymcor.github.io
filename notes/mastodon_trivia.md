@@ -42,9 +42,9 @@ It's pretty good on mobile devices, definitely worth installing.  You
 can have it installed simultaneously with whatever other app.
 
 Just use your phone's web browser to open your server's home page (in my case
-https://mas.to/home) like you would on the desktop, then tell it to install the
-PWA on the phone, which will provide yet another "app" icon for accessing
-Mastodon on your phone.
+https://mastodon.acm.org/home) like you would on the desktop, then tell it to
+install the PWA on the phone, which will provide yet another "app" icon for
+accessing Mastodon on your phone.
 
 ### Android
 
@@ -83,7 +83,7 @@ In theory, it's as simple as embedding the following code in an external
 link that you control:
 
 ```
-<a rel="me" href="https://mas.to/@jaymcor">Mastodon</a>
+<a rel="me" href="https://mastodon.acm.org/@jaymcor">Mastodon</a>
 ```
 
 However, sometimes you don't have access to raw HTML, or it gets modified
@@ -93,7 +93,7 @@ by the system you're linking to.
 
 I have not yet found a way to make it work.
 
-DM me at `@jaymcor@mas.to` if you figure out how.
+DM me at `@jaymcor@mastodon.acm.org` if you figure out how.
 
 #### Facebook
 
@@ -101,7 +101,7 @@ I have not yet found a way to make it work.
 
 Surprisingly frustrating, navigating the labyrinth hoping for a way to just
 update my profile to show a simple external contact URL.  DM me at
-`@jaymcor@mas.to` if you figure out how.
+`@jaymcor@mastodon.acm.org` if you figure out how.
 
 #### GitHub
 
