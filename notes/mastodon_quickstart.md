@@ -60,7 +60,7 @@ Here are some other tools for scouting servers:
 * [Coxy's list of mastodon instances](https://coxy.co/mastodon/)
 * [Mastodon instances help](https://mastodon.help/instances/en)
 
-### Sampling of servers
+### A sampling of servers
 
 * Most any server allows general communication
 * Some also gravitate toward specific interests
