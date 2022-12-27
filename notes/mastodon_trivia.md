@@ -136,9 +136,21 @@ be switched to point at your new address (in most cases you should do it).
 There's a process, it has to be done in a particular order
 
 * On old server, export your data
+  * Note that your "Archive" includes your liked posts, stuff you posted, etc
+  * You'll want to separately download the CSV for follows, blocks, mutes, etc
+  * Your bookmarks are available as separate CSV but also included in archive
 * On new server, create the new account
+  * Make the new account profile page look the way you want now
+  * Pretend you're a counterfeiter--duplicate the following
+    * profile avatar pic
+    * profile header pic
+    * bio
+    * verified links
+  * Basic preferences e.g. "slow mode", themes, etc.
 * On new server, goto Prefs/Account/MovingFrom and set old address as alias to new
 * On old server, goto Prefs/Account/MovingTo, put new address, old password
 * On new server, restore data as needed
 
 Check [the official docs](https://docs.joinmastodon.org/user/moving/) for an authoritative guide.
+
+**Note: at time of writing (2022-12-26) you still need to manually recreate the details in your profile, e.g. profile pic, bio, etc.  When you start the `MovingTo` process, the old account will be dimmed/disabled and will refer people to the new one, so best to finish exporting data, copying profile, and anything else you need with the old account, before you begin the `MovingTo` step.**

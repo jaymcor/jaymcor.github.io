@@ -85,12 +85,29 @@
 <h3 id="how">How</h3>
 <p>There’s a process, it has to be done in a particular order</p>
 <ul>
-<li>On old server, export your data</li>
-<li>On new server, create the new account</li>
+<li>On old server, export your data
+<ul>
+<li>Note that your “Archive” includes your liked posts, stuff you posted, etc</li>
+<li>You’ll want to separately download the CSV for follows, blocks, mutes, etc</li>
+<li>Your bookmarks are available as separate CSV but also included in archive</li>
+</ul></li>
+<li>On new server, create the new account
+<ul>
+<li>Make the new account profile page look the way you want now</li>
+<li>Pretend you’re a counterfeiter–duplicate the following
+<ul>
+<li>profile avatar pic</li>
+<li>profile header pic</li>
+<li>bio</li>
+<li>verified links</li>
+</ul></li>
+<li>Basic preferences e.g. “slow mode”, themes, etc.</li>
+</ul></li>
 <li>On new server, goto Prefs/Account/MovingFrom and set old address as alias to new</li>
 <li>On old server, goto Prefs/Account/MovingTo, put new address, old password</li>
 <li>On new server, restore data as needed</li>
 </ul>
 <p>Check <a href="https://docs.joinmastodon.org/user/moving/">the official docs</a> for an authoritative guide.</p>
+<p><strong>Note: at time of writing (2022-12-26) you still need to manually recreate the details in your profile, e.g. profile pic, bio, etc. When you start the <code>MovingTo</code> process, the old account will be dimmed/disabled and will refer people to the new one, so best to finish exporting data, copying profile, and anything else you need with the old account, before you begin the <code>MovingTo</code> step.</strong></p>
 </body>
 </html>
