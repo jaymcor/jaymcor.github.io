@@ -44,7 +44,8 @@ There seem to be two typical roadbumps:
   * Conceptually a big tree of nodes, all connected
   * You can communicate with anybody
   * You can move your account to a different provider any time
-    * It's designed in... only takes a couple clicks
+    * Designed into the system... only takes a few clicks
+    * Your existing followers automatically migrate
 
 ### Server recommendation help
 
