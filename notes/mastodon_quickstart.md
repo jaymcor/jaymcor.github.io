@@ -52,13 +52,21 @@ There seem to be two typical roadbumps:
 The official [joinmastodon.org](https://joinmastodon.org/) page
 
 * Provides a simple and easy interface
-* Most people just use that
+* Many people just use that
 
 Here are some other tools for scouting servers:
 
 * [Mastodon instance wizard](https://instances.social/)
 * [Coxy's list of mastodon instances](https://coxy.co/mastodon/)
 * [Mastodon instances help](https://mastodon.help/instances/en)
+
+The suggestions might not be acceptable:
+
+* random special interests
+* too overtly political
+* too insular, etc
+
+In that case, have a look at some of the following options...
 
 ### A sampling of servers
 
