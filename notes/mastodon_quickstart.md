@@ -265,7 +265,7 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
 #### Hashtags
 
 * Use them!  It helps people search and discover
-* Inline or collected at end
+* Prefer collected at end for accessibility
 * Don't go crazy
 * CamelCase for clarity and screenreaders
 * But it's not case sensitive
@@ -298,6 +298,7 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
 
 * In other words re-posting or re-sharing
 * No annotations--you can read [the rationale](https://mastodon.social/@Gargron/99662106175542726) if curious
+  * However, there is an ongoing debate
 * Best mechanism for discovery and cohesion
 * Don't worry, people have the option to hide your boosts if they like
 * Liking (the star) is nice but less crucial
