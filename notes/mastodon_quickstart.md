@@ -97,6 +97,7 @@ In that case, have a look at some of the following options...
 * [tabletop.social](https://tabletop.social/about) -- gaming
 * [toot.cafe](https://toot.cafe/about) -- web development
 * [wandering.shop](https://wandering.shop/about) -- sci fi and fantasy
+* [awscommunity.social](https://awscommunity.social/about) -- AWS interest
 * [mastodon.acm.org](https://mastodon.acm.org/about) -- computer science
 * [defcon.social](https://defcon.social/about) -- hacking poseurs
 * [fediscience.org](https://fediscience.org/about) -- actual scientists
@@ -316,6 +317,8 @@ There is no shortage of introductions on the web, a quick search away.
 
 Some examples:
 
+* [Washington Post guide](https://www.washingtonpost.com/technology/2022/12/17/how-to-join-mastodon/)
+* [Wall Street Journal guide](https://www.wsj.com/articles/dont-have-44-billion-for-your-own-social-media-network-try-mastodon-11668002451)
 * [How to Join Mastodon (youtube)](https://www.youtube.com/watch?v=9ceO6N8OX_w)
 * [On Joining Mastodon...](https://medium.com/whither-news/on-joining-mastodon-d539eed5e41a)
 * [TechCrunch Beginner's Guide to Mastodon](https://techcrunch.com/2022/11/08/what-is-mastodon/)
