@@ -157,7 +157,7 @@ But if you want to check more carefully, consider:
   * Proclivities?
   * Location?
   * Profession?
-* Add links to websites
+* Add links to your websites
 
 #### Post an introduction
 
