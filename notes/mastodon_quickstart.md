@@ -45,7 +45,7 @@ There seem to be two typical roadbumps:
   * You can communicate with anybody
   * You can move your account to a different provider any time
     * Designed into the system... only takes a few clicks
-    * Your existing followers automatically migrate
+    * Your existing followers automatically update
 
 ### Server recommendation help
 
