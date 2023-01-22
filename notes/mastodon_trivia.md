@@ -1,4 +1,4 @@
-# More Mastadon Tips & Trivia
+# More Mastodon Tips & Trivia
 
 ----------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ accessing Mastodon on your phone.
 
 There are a bunch of options, here's what I've tried:
 
-* The Official Mastadon App
+* The Official Mastodon App
 * Tusky
 
 I'm currently using Tusky because I'm happy that the developer pissed off the
@@ -171,4 +171,50 @@ Check [the official docs](https://docs.joinmastodon.org/user/moving/) for an aut
 
 See also [Josh Justice's guide](https://codingitwrong.com/2022/10/10/migrating-a-mastodon-account.html) for some details.
 
-**Note: at time of writing (2022-12-26) you still need to manually recreate the details in your profile, e.g. profile pic, bio, etc.  When you start the `MovingTo` process, the old account will be dimmed/disabled and will refer people to the new one, so best to finish exporting data, copying profile, and anything else you need with the old account, before you begin the `MovingTo` step.**
+### Cautions and provisos
+
+#### Past posts
+
+Your past posts are not migrated.
+
+#### Manual config of new account
+
+At time of writing (2022-12-26) you still need to manually recreate the details
+in your profile, e.g. profile pic, bio, etc, as described above.
+
+#### Be ready before touching the trigger
+
+When you start the `MovingTo` process, the old account will be dimmed/disabled
+and will refer people to the new one, so best to finish exporting data, copying
+profile, and anything else you need with the old account, before you begin the
+`MovingTo` step.
+
+#### Follows from new account might get stuck on manual approval
+
+While followers will automatically update to point at your new address
+(supposing you initiate this with the `MovingTo` step), the converse
+process--the import of your follow list (people you follow)--can have some
+hickups.
+
+Some of the entries in your follow list may require manual approval.  When that
+person sees the follow request from your new account, it's not obviously
+different than a regular request.  If that person recognizes your name and
+remembers that you mentioned you were going to migrate, fine, otherwise they
+may wonder what is going on, and may not be sure it is you (unfortunately
+there's currently no cryptographically signed linkage to your prior
+address--they just have to exercise prudence).  Or they might be too busy to
+notice the new follow request.  The main effect is that there might be a lag
+for people who require manual approval of follow requests (an option under
+profile config).
+
+#### Some people have experienced errors during migration
+
+I did not personally experience this, but apparently what can happen
+is that, if the new server is slow, some of the constituent requests
+can fail and you might need to restart/retry the migration, which could
+be a pain.
+
+#### If old server can't communicate, then what?
+
+This is the Achilles' Heel.  You can not migrate unless the old server is up.
+Be forewarned.
