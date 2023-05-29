@@ -201,6 +201,10 @@ Those are not documented here.
 * Click their name for more info, click follow
   * Have a look what kind of things they post and how often
 
+#### Curated directories
+
+* [Discover Mastodon (by fedified)](https://discover.fedified.com/)
+
 #### Manually
 
 * Use the search box
@@ -298,8 +302,9 @@ Yes, you can follow hashtags, just enter them in search or explore, open the fee
 ## Boost some things
 
 * In other words re-posting or re-sharing
-* No annotations--you can read [the rationale](https://mastodon.social/@Gargron/99662106175542726) if curious
-  * However, there is an ongoing debate
+* No annotations as of 2023-02-05
+  * [The original rationale](https://mastodon.social/@Gargron/99662106175542726) may be of some historic interest
+  * By popular request, annotations are on the dev roadmap
 * Best mechanism for discovery and cohesion
 * Don't worry, people have the option to hide your boosts if they like
 * Liking (the star) is nice but less crucial
@@ -319,6 +324,7 @@ Some examples:
 
 * [Washington Post guide](https://www.washingtonpost.com/technology/2022/12/17/how-to-join-mastodon/)
 * [Wall Street Journal guide](https://www.wsj.com/articles/dont-have-44-billion-for-your-own-social-media-network-try-mastodon-11668002451)
+* [Genn Fleishman's guide](https://tidbits.com/2023/01/27/mastodon-a-new-hope-for-social-networking/)
 * [How to Join Mastodon (youtube)](https://www.youtube.com/watch?v=9ceO6N8OX_w)
 * [On Joining Mastodon...](https://medium.com/whither-news/on-joining-mastodon-d539eed5e41a)
 * [TechCrunch Beginner's Guide to Mastodon](https://techcrunch.com/2022/11/08/what-is-mastodon/)

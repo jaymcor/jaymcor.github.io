@@ -105,9 +105,12 @@ update my profile to show a simple external contact URL.  DM me at
 
 #### GitHub
 
-Mostly github wants to remove the `rel="me"` part, but there is a way.
+Originally the best way was to create a user repo, e.g. `jaymcor.github.io` and
+add your own raw `index.html` to it, containing the `rel="me"` link.
 
-Create a user repo, e.g. `jaymcor.github.io` and add your own raw `index.html`...
+However, it is now easier, you can just directly link to the URL form of your
+mastodon address in your github user profile, and then the link from mastodon
+profile will verify correctly.
 
 ### Fediverse
 
@@ -169,7 +172,9 @@ There's a process, it has to be done in a particular order.
 
 Check [the official docs](https://docs.joinmastodon.org/user/moving/) for an authoritative guide.
 
-See also [Josh Justice's guide](https://codingitwrong.com/2022/10/10/migrating-a-mastodon-account.html) for some details.
+See also [fedi.tips guide](https://fedi.tips/transferring-your-mastodon-account-to-another-server/).
+
+See also [Josh Justice's guide](https://codingitwrong.com/2022/10/10/migrating-a-mastodon-account.html).
 
 ### Cautions and provisos
 
