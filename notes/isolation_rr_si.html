@@ -119,90 +119,137 @@
 <p>Infamously, one large database vender (rhymes with Auracle) sold SI to their customers as <code>Serializable</code>.</p>
 <p>Recent versions of PostgreSQL provide an improvement on SI called Serializable Snapshot Isolation (SSI). For the sake of this document, we will borrow a great example of write skew anomalies from the paper <a href="https://drkp.net/papers/ssi-vldb12.pdf">Serializable Snapshot Isolation in PostgreSQL (VLDB 2012) by Dan Ports et al</a>.</p>
 <h2 id="lets-experiment">Let’s Experiment</h2>
-<h3 id="installing-mysql">Installing MySQL</h3>
+<h3 id="mysql">MySQL</h3>
+<h4 id="installing">Installing</h4>
 <p>As root, quickie unsafe install:</p>
 <pre><code># dnf install -y community-mysql-server
 # systemctl start mysqld</code></pre>
+<h4 id="creating-a-test-database">Creating a Test Database</h4>
+<pre><code># mysql -u root -e &#39;CREATE DATABASE test&#39;</code></pre>
+<h4 id="connecting-to-command-line-prompt">Connecting to Command Line Prompt</h4>
 <p>Connect to the insecure database like so:</p>
-<pre><code># mysql -u root -p</code></pre>
-<h3 id="test-setup">Test setup</h3>
-<pre><code>mysql&gt; CREATE DATABASE test;
-mysql&gt; USE test;
-mysql&gt; CREATE TABLE doctor (name VARCHAR(20), oncall BOOLEAN) ENGINE=InnoDB;
-mysql&gt; INSERT INTO doctor (name, oncall) VALUES (&quot;Andy&quot;, TRUE);
-Query OK, 1 row affected (0.00 sec)
-
-mysql&gt; INSERT INTO doctor (name, oncall) VALUES (&quot;Brad&quot;, TRUE);
-Query OK, 1 row affected (0.01 sec)
-
-mysql&gt; EXIT</code></pre>
-<h3 id="the-actual-test">The Actual Test</h3>
+<pre><code># mysql -u root -D test</code></pre>
+<h4 id="selecting-isolation-level">Selecting Isolation Level</h4>
 <p>InnoDB defaults to RR, but we’ll specify it manually just to be sure.</p>
+<pre><code>mysql&gt; SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;</code></pre>
+<h4 id="write-skew-test-setup">Write Skew Test Setup</h4>
+<p>MySQL will likely default to InnoDB, but we’ll specify it just to be sure.</p>
+<pre><code>CREATE TABLE doctor (name VARCHAR(20), oncall BOOLEAN) ENGINE=InnoDB;
+INSERT INTO doctor (name, oncall) VALUES (&#39;Andy&#39;, TRUE);
+INSERT INTO doctor (name, oncall) VALUES (&#39;Brad&#39;, TRUE);
+EXIT</code></pre>
+<h3 id="postgresql">PostgreSQL</h3>
+<h4 id="installing-1">Installing</h4>
+<p>As root:</p>
+<pre><code># dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/F-37-x86_64/pgdg-fedora-repo-latest.noarch.rpm
+# dnf install -y postgresql14-server postgresql14
+# /usr/pgsql-14/bin/postgresql-14-setup initdb
+# systemctl start postgresql-14</code></pre>
+<h4 id="creating-a-test-database-1">Creating a Test Database</h4>
+<pre><code># su -c &#39;createdb test&#39; - postgres</code></pre>
+<h4 id="connecting-to-command-line-prompt-1">Connecting to Command Line Prompt</h4>
+<pre><code># su -c &#39;psql -d test&#39; - postgres</code></pre>
+<h4 id="selecting-isolation-level-1">Selecting Isolation Level</h4>
+<pre><code>test=# SET SESSION CHARACTERISTICS AS TRANSACTION ISOLATION LEVEL REPEATABLE READ;</code></pre>
+<h4 id="write-skew-test-setup-1">Write Skew Test Setup</h4>
+<p>Looks just like with MySQL, except, instead of <code>ENGINE=InnoDB</code> we would say <code>USING someAccessMethod</code> if we wanted to override the default internal table access method.</p>
+<pre><code>CREATE TABLE doctor (name VARCHAR(20), oncall BOOLEAN);
+INSERT INTO doctor (name, oncall) VALUES (&#39;Andy&#39;, TRUE);
+INSERT INTO doctor (name, oncall) VALUES (&#39;Brad&#39;, TRUE);
+EXIT</code></pre>
+<h3 id="the-actual-write-skew-test">The Actual Write Skew Test</h3>
+<p>Happily, one version suffices for both MySQL and PostgreSQL.</p>
 <p>Terminal 1: Andy is checking whether it’s safe for him to take some time off:</p>
-<pre><code># mysql -u root -p
-mysql&gt; USE test;
-mysql&gt; SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
-mysql&gt; START TRANSACTION;
-mysql&gt; SELECT name FROM doctor WHERE oncall=TRUE AND name&lt;&gt;&quot;Andy&quot;;
+<pre><code>BEGIN;
+SELECT name FROM doctor WHERE oncall=TRUE AND name&lt;&gt;&#39;Andy&#39;;
 +------+
 | name |
 +------+
 | Brad |
-+------+
-1 row in set (0.00 sec)
-</code></pre>
++------+</code></pre>
 <p>Good. There’s another doctor on call. Speaking of which…</p>
 <p>Terminal 2: Brad, the other doctor, has the same plan:</p>
-<pre><code># mysql -u root -p
-mysql&gt; USE test;
-mysql&gt; SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
-mysql&gt; START TRANSACTION;
-mysql&gt; SELECT name FROM doctor WHERE oncall=TRUE AND name&lt;&gt;&quot;Brad&quot;;
+<pre><code>BEGIN;
+SELECT name FROM doctor WHERE oncall=TRUE AND name&lt;&gt;&#39;Brad&#39;;
 +------+
 | name |
 +------+
 | Andy |
 +------+
-1 row in set (0.00 sec)
 
-mysql&gt; UPDATE doctor SET oncall=FALSE WHERE name=&quot;Brad&quot;;
-Query OK, 1 row affected (0.00 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql&gt; COMMIT;
-Query OK, 0 rows affected (0.00 sec)</code></pre>
+UPDATE doctor SET oncall=FALSE WHERE name=&#39;Brad&#39;;
+COMMIT;</code></pre>
 <p>Cool, Brad is all set.</p>
 <p>Back at terminal 1: Andy thinks “quick let’s get in before anything changes”:</p>
-<pre><code>mysql&gt; UPDATE doctor SET oncall=FALSE WHERE name=&quot;Andy&quot;;
-Query OK, 1 row affected (0.00 sec)
-Rows matched: 1  Changed: 1  Warnings: 0</code></pre>
-<p>So far so good. Andy is a careful boy and takes a moment to double check:</p>
-<pre><code>mysql&gt; SELECT name FROM doctor WHERE oncall=TRUE;
+<pre><code>UPDATE doctor SET oncall=FALSE WHERE name=&#39;Andy&#39;;</code></pre>
+<p>So far so good. Andy is a careful boy and takes a moment to double check before he commits:</p>
+<pre><code>SELECT name FROM doctor WHERE oncall=TRUE;
 +------+
 | name |
 +------+
 | Brad |
 +------+
-1 row in set (0.00 sec)
 
-mysql&gt; COMMIT;
-Query OK, 0 rows affected (0.00 sec)</code></pre>
+COMMIT;</code></pre>
 <p>The latter SELECT result seems to make sense–roughly speaking RR says we see a consistent view of the world, untainted by changes wrought by any other transaction… a stable read set, except we do see changes wrought by our own transaction (i.e. Andy is no longer on call).</p>
 <p>Excellent! All’s well that ends well. Andy’s name is not in the result set, because he’s taking time off, but there is at least one name in the result set. Andy reflects on how awesome SQL is.</p>
 <p>However… it didn’t actually end well. Imagine Andy’s surpise when Charlie shows him this:</p>
-<pre><code>mysql&gt; SELECT * FROM doctor;
+<pre><code>SELECT * FROM doctor;
 +------+--------+
 | name | oncall |
 +------+--------+
 | Brad |      0 |
 | Andy |      0 |
-+------+--------+
-2 rows in set (0.00 sec)</code></pre>
++------+--------+</code></pre>
 <p>WHAT!!!!! How did this happen?</p>
 <h3 id="epilogue">Epilogue</h3>
-<p>Andy was bitten by the infamous write skew anomaly, which is not allowed under RR, but is allowed under SI.</p>
+<p>Andy was bitten by the infamous write skew anomaly, which is not allowed under RR, but is allowed under SI. By the way, this happens in both MySQL RR and PostgreSQL RR.</p>
 <p>Simply put, Andy and Brad were operating from the same snapshotted read view, against which their writes were individually valid, but the two transactions overlap in a non-serializable way, and the combination of overlapping writes lead to an unacceptable outcome–there is nobody oncall. Write skew can ruin your day. Phantom protection seems fine in this example though–which is again consistent with SI.</p>
-<p>What does this tell us about MySQL’s <code>Repeatable Read</code> isolation? It looks technically more like <code>Snapshot Isolation</code> based on these experiments, though it’s probably not purely either one. Perhaps the developers were reticent to depart from the ANSI standard otherwise they would call it Snapshot. Regardless, people don’t always define terms the same way even when they think they do, and practice often diverges from theory. This is especially so in the world of database isolation levels.</p>
+<p>What does this tell us about MySQL and PostgreSQL <code>Repeatable Read</code> isolation? It looks technically more like <code>Snapshot Isolation</code> based on these experiments, though it’s probably not purely either one. Perhaps the developers were reticent to depart from the ANSI standard otherwise they would call it Snapshot.</p>
+<h2 id="minor-plot-twist">Minor Plot Twist</h2>
+<p>It’s not exactly an unexpected plot twist, but it turns out RR in MySQL is weirder than you think. It is not really SI either, if you consider the lost updates anomaly, which should not be allowed in either RR or SI.</p>
+<p>The aforementioned critique of ANSI isolation levels seems convinced that lost updates are not allowed in RR, and notes that “… the anomaly P4 is useful in distinguishing isolation levels intermediate in strength between READ COMMITTED and REPEATABLE READ.” In other words, RC may exhibit lost updates, but RR does not.</p>
+<p>And yet, according to the following test, in MySQL, lost updates happen even in RR. On the other hand, the same test in PostgreSQL does not exhibit the lost update anomaly in RR, though it does in RC, which conforms better to what the literature says for these isolation levels.</p>
+<h3 id="lost-update-test-setup">Lost Update Test Setup</h3>
+<p>We just need one row for this…</p>
+<pre><code>CREATE TABLE account (id INT, cash INT);
+INSERT INTO account (id, cash) VALUES (1, 100);</code></pre>
+<h3 id="lost-update-test">Lost Update Test</h3>
+<p>Terminal 1 (seeking to deposit $20):</p>
+<pre><code>BEGIN;
+SELECT cash FROM account WHERE id=1;
++------+
+| cash |
++------+
+|  100 |
++------+
+</code></pre>
+<p>While this is going on, in terminal 2 (seeking to deposit $30):</p>
+<pre><code>BEGIN;
+SELECT cash FROM account WHERE id=1;
++------+
+| cash |
++------+
+|  100 |
++------+
+
+UPDATE account SET cash=130 WHERE id=1;
+COMMIT;</code></pre>
+<p>Back to terminal 1, which saw a balance of $100:</p>
+<pre><code>UPDATE account SET cash=120 WHERE id=1;
+COMMIT;
+SELECT cash FROM account WHERE id=1;
++------+
+| cash |
++------+
+|  120 |
++------+
+</code></pre>
+<p>This is bad, it means the $30 deposit was overwritten. From the user’s perspective, either the total should be $150, or one of the transactions should have failed. This is a thing that can happen to you in RR isolation level on MySQL.</p>
+<h3 id="some-advice-re-lost-update">Some Advice re Lost Update</h3>
+<p>Although <code>Serializable</code> isolation level would prevented this problem in MySQL, if you are doing this type of transaction pattern, consider making the database aware of your intent by using <code>SELECT ... FOR UPDATE</code>.</p>
+<h2 id="summary">Summary</h2>
+<p>People don’t always define terms in the same way (even when they think they do), and practice often diverges from theory. This is especially so in the world of database isolation levels.</p>
 <p>The article <a href="https://alibaba-cloud.medium.com/comprehensive-understanding-of-transaction-isolation-levels-212460572176">Comprehensive Understanding of Transaction Isolation Levels</a> has more details comparing the nuances of some popular implementations.</p>
 </body>
 </html>
