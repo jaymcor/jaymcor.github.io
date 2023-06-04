@@ -69,8 +69,8 @@ According to [A Critique of ANSI SQL Isolation Levels (SIGMOD 1995) by
 Berenson, Bernstein, Gray et al](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf), the ANSI standard isolation levels suffer from
 a number of shortcomings, such as failure to address "write skew" anomalies
 (e.g. the history sequence T1:read[x], T2:read[y], T1:write[y], T2:write[x],
-T1:commit, T2:commit) which clearly contains a non-serializable overlap between
-T1 and T2.
+T1:commit, T2:commit, which clearly contains a non-serializable overlap between
+T1 and T2).
 
 The paper [Generalized Isolation Level Definitions (ICDE 2000) by Adya, Liskov, et al](https://pmg.csail.mit.edu/papers/icde00.pdf) further elaborates on the theoretical shortcomings of the ANSI standard, and provides more abstract, general, and flexible definitions.
 
