@@ -5,15 +5,15 @@
 I'm not an expert, but some common opinions:
 
 * Freshness matters a lot.
-* Grind your own beans--it takes only a moment and it's fresher.
+* Grind your own beans--it takes only a moment.
 * When the vendor says "blend" it really means "random, whatever's cheapest".
 * It's generally better if they give source details.
 * "Dark roast" is over-rated, but vendors like it because consistent.
 
 ## Provisos
 
-This document is mostly meant to boost my own memory, but maybe helpful
-to somebody else, though there's no guarantee we would agree on taste.
+This document is meant to boost my own memory, but might be helpful
+to somebody else.  No guarantee we would agree on taste.
 
 I don't like dark roast coffee, so not exploring that territory much.
 
