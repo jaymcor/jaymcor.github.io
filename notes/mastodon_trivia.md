@@ -66,6 +66,47 @@ There are a bunch, haven't tried them.
 
 ----------------------------------------------------------------------------
 
+## Mastodon Status
+
+Please keep in mind that *Mastodon is fundamentally a distributed service*
+with each instance run by a different team.  So it's hard to say anything
+about the status of the entire ecosystem.  Usually it makes more sense to
+talk about the status of a particular instance.
+
+### Internal Server Status Pages
+
+Not every server has one (and if it does, it might not be available), but
+often you can just prepend "status" on the hostname of a given server.
+
+For example:
+
+* [https://status.mastodon.social/](status.mastodon.social)
+* [https://status.universeodon.com/](status.universeodon.com)
+* [https://status.mastodon.online/](status.mastodon.online)
+* [https://status.mstdn.social/](status.mstdn.social)
+* [https://status.masto.ai/](status.masto.ai)
+* [https://status.mastodon.world](status.mastodon.world)
+* [https://status.ohai.social](status.ohai.social)
+* [https://status.newsie.social](status.newsie.social)
+* [https://status.techhub.social](status.techhub.social)
+* [https://status.fosstodon.org](status.fosstodon.org)
+* [https://status.infosec.exchange](status.infosec.exchange)
+* [https://status.ioc.exchange](status.ioc.exchange)
+* [https://status.hachyderm.io](status.hachyderm.io)
+
+### External Server Status Pages
+
+A better way is to check something out-of-band, neither burdening
+nor depending upon the servers in question...
+
+* [https://mastodonstatus.com/](mastodonstatus.com)
+
+### User Counts
+
+* https://mastodon.social/@mastodonusercount
+
+----------------------------------------------------------------------------
+
 ## Verified Links
 
 ### Why
