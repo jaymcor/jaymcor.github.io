@@ -52,6 +52,9 @@ There are a bunch of options, here's what I've tried:
 
 * The Official Mastodon App
 * Tusky
+* Fedilab
+* Megalodon
+* Tooot
 
 I'm currently using Tusky because I'm happy that the developer pissed off the
 fascists by being so eager to quelch them on his app at the drop of the hat, so
@@ -63,6 +66,10 @@ unhappy, that's a sign of doing something right.
 There are a bunch, haven't tried them.
 
 * MetaText is apparently quite popular
+* Toot!
+* Ice Cubes
+* Ivora
+* Mona
 
 ----------------------------------------------------------------------------
 
