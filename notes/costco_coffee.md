@@ -23,13 +23,28 @@ In order of best to worst.
 
 ---------------------------------------------------------------------------
 
+### Lavazza Espresso Italiano Coffee Whole Bean
+
+![](../images/lavazza.jpg)
+
+* Easily my favorite so far.
+* Available at business costco.
+* Works well hot and coldbrew.
+  * Preferred to Mt Comfort Peru coffee in blind taste test.
+    * Both hot and coldbrew, with and without milk.
+* "Arabica blend from Central and South America."
+* Taste: "floral and citrus fruit."
+  * To me, a more pure coffee taste, not tainted or fermented etc.
+
+---------------------------------------------------------------------------
+
 ### Organic Mt Comfort Peru Coffee Whole Bean
 
 ![](../images/mt_comfort_peru.jpg)
 
-* Unfortunately no longer available at costco.
+* Available sporadically from costco.
 * Available on Amazon but pricy.
-* Works well hot and cold.
+* Works well hot and coldbrew.
 * Taste: "chocolatey, nutty."
 
 ---------------------------------------------------------------------------
@@ -48,7 +63,7 @@ In order of best to worst.
 
 ![](../images/caffe_vita.jpg)
 
-* It has a pretty strong taste, like some kind of root, better hot than cold.
+* It has a pretty strong taste, like some kind of root, better hot than coldbrew.
 * Caffe Vita is apparently a coffee roaster based in Seattle.
 * "mix of Ethiopia, Indonesia, and South American coffees."
 * Taste: "milk chocolate caramel and dark cherry."
@@ -61,5 +76,5 @@ In order of best to worst.
 
 * Dark roast--very much so.
 * It was on sale. Never again.
-* If you have to use it, use it for cold brew.
+* If you have to use it, use it for coldbrew.
 * Taste: "full bodied with a smokey finish"... actually like ashes.
