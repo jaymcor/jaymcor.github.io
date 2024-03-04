@@ -200,7 +200,7 @@ by him and don't support his conclusions, and that there is no credible
 evidence for long term persistence of the mRNA strands and resulting antigens.
 It's like he has no concept of how one might go about designing a modern
 vaccine with a particular mRNA lifetime.  Actually he probably doesn't.
-Naturally, his viewers don't.
+I certainly don't, but I can imagine.  Presumably his viewers don't.
 
 He talks about the risk of myocarditis without mentioning that the risk is
 orders of magnitude higher when infected with COVID-19 and is more commonly
