@@ -129,7 +129,7 @@ For anyone wanting more information about the news event I linked to:
 * [Colorado authorities wrapping up investigation into Marion police who raided Kansas newspaper](https://kansasreflector.com/2024/04/02/colorado-authorities-wrapping-up-investigation-into-marion-police-who-raided-kansas-newspaper/)
 * [‘Duty to democracy’: Kansas newspaper files lawsuit after police raided the newsroom](https://www.kansascity.com/news/state/kansas/article287270750.html)
 * [Raiding the newspaper wasn’t Marion’s first attack on democracy and the 1st Amendment](https://www.kansas.com/opinion/guest-commentary/article287290395.html)
-* [Kansas Newspaper publisher sues over palice raid, claiming retaliation](https://www.washingtonpost.com/nation/2024/04/03/kansas-newspaper-raid-lawsuit/)
+* [Kansas Newspaper publisher sues over police raid, claiming retaliation](https://www.washingtonpost.com/nation/2024/04/03/kansas-newspaper-raid-lawsuit/)
 
 ----------------------------------------------------------------------------
 
