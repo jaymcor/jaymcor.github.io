@@ -160,21 +160,21 @@ Goals in prioritized order:
 
 What I considered:
 
-* Mastodon (well known)
-* Matrix.org / Element (well known)
-* Diaspora (makes you send email requesting an invite, then says $8. Ruby.)
-* WriteFreely / Write.as (costs for hosted version.  Go.)
-* Plume (unmaintained. Rust.)
-* Misskey (unstable--misskey.ai gone, weird interface, hard to recommend. Typescript.)
-* Friendica (seems OK, you have to fill in a form and wait for approval. PHP.)
+* Mastodon (Ruby; popular)
+* Matrix.org / Element (Rust,Kotlin,React,etc; well known)
+* Diaspora (Ruby; makes you send email requesting an invite, then says $8)
+* WriteFreely / Write.as (Go; costs for hosted version)
+* Plume (Rust; unmaintained)
+* Misskey (Typescript; unstable--misskey.ai gone, weird interface, hard to recommend)
+* Friendica (PHP; slow, sad interface, have to fill in a form and wait for approval)
 
 ### Public Discussions
 
 Additional public forum goals:
 
 * public posts viewable by public without creating any kind of account
-* ideally can delete and/or block comments on my own posts
-* bad actors banned quickly
+* ideally can delete and/or block any or all comments on my own posts
+* bad actors deplatformed quickly, encounters rare
 
 I'll **continue using my existing Mastodon account**
 ([@jaymcor@mastodon.acm.org](https://mastodon.acm.org/@jaymcor))
@@ -182,12 +182,13 @@ for public discussion, sharing, reposting, and such, with a little less worry
 about over-posting.  But I will lean on boosting, so that if somebody is only
 marginally interested in following, they can just mute the boosts.
 
-Since Mastodon is typically limited to short and simple posts, for long posts or reference
-material of permanent interest, I will use something separate.  While I am comfortable
-writing markdown and generating HTML pages (at jaymcor.github.io), I would prefer to use
-something that I can recommend for non-technical users, such as Diaspora.  However,
-since I can not find a good recommendation, I'll just do my long-format posts the
-old-fashioned way for now and link them from Mastodon.
+Since Mastodon is typically limited to short and simple posts, for long posts
+or reference material of permanent interest, I will use something separate.
+While I am comfortable writing markdown and generating HTML pages (at
+jaymcor.github.io), I would prefer to use something that I can recommend for
+non-technical users, such as Diaspora.  However, since I can not find a good
+recommendation, I'll just do my long-format posts the old-fashioned way for now
+and link them from Mastodon.
 
 See [my quickstart guide](mastodon_quickstart.html) for help with Mastodon.
 
@@ -195,19 +196,25 @@ See [my quickstart guide](mastodon_quickstart.html) for help with Mastodon.
 
 Additional private chatroom goals:
 
-* encrypted
+* encrypted by default
 * quick and easy to create account
 * group ownership and/or asymmetric trust
+* implicit "acquaintances" group?
+* choose group feed or merged feed (so by default I need not click each group)
 
 For private communication it will be crucial for the other party to have a
-trusted identity, and preferably cryptographic keys.  In my opinion, it is
-generally a mistake to try to remember that a seemingly private conversation
-is less private than it looks.  Humans are bad at detecting tiny security
-errors that can have big consequences.  So it is better to use a platform for
-private conversations that is encrypted by default.
+trusted identity, and presumably cryptographic keys.
+
+In my opinion, it is generally a mistake to try to remember that a seemingly
+private conversation is less private than it looks.  Humans are bad at
+detecting tiny security errors that can have big consequences.  So in a
+platform that seeks to support private conversations, it is better to be
+encrypted by default.
 
 It seems like **matrix.org is the main open encrypted option available**
-currently.
+currently, and has been building out the technology fairly well.  A lot
+of their design decisions seem to have been made exactly the way I would
+make them (presumably a good thing).
 
 My address there is [@jaymcor:matrix.org](https://matrix.to/#/@jaymcor:matrix.org).
 
@@ -218,8 +225,9 @@ will maintain a group of closest friends.  Less public updates will go to there.
 Any important public updates about myself, sent to the public Mastodon
 group, will also be mirrored here.
 
-The matrix.org system was comfortable and easy to get stuff done, passed all my
-basic testing, so I think I can recommend that to other people.
+Usability test: the matrix.org system was comfortable and easy to get stuff
+done, passed all my basic testing, so I think I can recommend that to other
+people.
 
 See [matrix.org](https://matrix.org) for creating new accounts--it's pretty
 easy, probably no need for me to write any special instructions for that.
