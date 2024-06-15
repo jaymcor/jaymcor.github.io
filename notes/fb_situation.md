@@ -46,9 +46,6 @@ or whether a thing in your feed is from who it purports to be from, or avoid
 seeing disinformation, incendiary content, or just ads that the AI chooses to
 mix in.  So their basic premise requires the **complete erosion of trust**.
 
-There's no point in me rehashing all my complaints here, especially since I
-evidently was willing to put up with it.
-
 Like many, I complain, but am a creature of habit, too lazy to change, and not
 wanting to abandon the network of friends who are also using the platform.  The
 vendor lock-in problem is naturally the ultimate cause of the anti-competitive
@@ -58,6 +55,41 @@ active, at times I take take a hiatus, but I generally return.
 From time to time, friends have told me about **strange administrative actions**
 taken against them, and I've paid attention but tried not to over-react.  It's
 concerning, but I like to think of myself as patient and open-minded...
+
+In fact I can be very patient.  But the list of annoyances is long.  Here are some examples.
+
+* FB is one of the least reliable web sites...
+* FB makes no assurance that you'll see all your friends' posts or vice verse...
+* FB provides no transparency when it's partially down... or when it will be restored...
+* FB UI design and implementation is buggy and random and frustrating...
+* FB UI wastes most of the screen real estate...
+* FB UI not particularly configurable...
+* FB feed is not in sequential order...
+* FB feed content selection algorithm is not configurable...
+* FB feed makes me unsure of when to quit scrolling...
+* FB scrolling is also a pox upon the internet...
+* FB feed forces me to see ads, and not even good ones...
+* FB feed mixes in suggested content...
+* FB feed deprives me of agency and control...
+* FB actively opposes third party improvements...
+* FB has privacy controls, but sells my data anyway...
+* FB makes a mockery of security and doesn't care...
+* FB makes it impossible to know who you're talking to...
+* FB is rampantly abused for hacking and phishing...
+* FB is rampantly abused for disinformation campaigns...
+* FB moderation is random--either too sudden or nonexistent...
+* FB fails to moderate when they should...
+* FB overmoderates when they shouldn't...
+* FB makes people think moderation is bad...
+* FB doesn't particularly make any effort to vet ad quality...
+* FB is rife with untrustworthy ads and viral posts...
+* FB pretends letting you opt-out on a per spammer basis is sufficient...
+* FB will hamfistedly block entire news venues that are critical of FB...
+* FB seems to have no strategy for addressing disinfo or identity theft...
+* FB fills my notification queue with junk I can't opt out of...
+* FB derives profit from getting me to spend/waste more time there and view more ads... the harder I try to finish consuming new posts from friends, it seems the more the feed thins out and is dominated by ads, as if the user feeling caught up is a thing that must be avoided at all costs.
+
+So yeah, I don't like it there, but there are a number of old friends still using it.
 
 ----------------------------------------------------------------------------
 
@@ -79,7 +111,7 @@ community standards:
 
 ![](../images/fb_explanation.png)
 
-If there had been a gray issue, I would perhaps have checked myself and
+If it had been a gray issue, I would perhaps have checked myself and
 been thankful for the feedback.  It wasn't.
 
 I double-checked that the newspaper article I linked was still valid, did not
@@ -94,9 +126,9 @@ of abject mediocrity.
 It may well be that there is some person or small business specializing in
 social media manipulation and/or reputation repair, trying to remove
 references to news of that particular incident, possibly on behalf of the
-very same perpetrators.  But that should not be allowed, as it confirms their idea
-that they can use unscrupulous means to get away with whatever they desire.  Yet
-it seems this sort of practice is business as usual.
+very same perpetrators.  But that should not be allowed, as it confirms their
+idea that they can use unscrupulous means to get away with whatever they
+desire.  Yet it seems this sort of practice is business as usual.
 
 Ultimately it does not matter how exactly it is happening.  I don't mean to say
 that any person employed by Meta Platforms, Inc is deliberately abetting these
@@ -106,18 +138,42 @@ systems in a broken, inaccurate, and easily misused state, Facebook is, at the
 very least, indirectly abetting fraudsters and manipulators**--through
 negligence and incompetence.
 
-And now that it has been brought so directly to my attention, it seems to me that I
-should not support that.  I believe my **recourse is to take my business elsewhere**.
-I won't miss the ads or deliberate blurring of authentic and inauthentic content.
+Now that it has been brought so directly to my attention, it seems to me
+that I should not support that.  I believe my **recourse is to take my business
+elsewhere**.  I won't miss the ads or deliberate blurring of authentic and
+inauthentic content.
 
 ----------------------------------------------------------------------------
 
-## Update
+## Update 1
 
 * [A local news site was critical of Facebook—then Meta banned all their links](https://www.thehandbasket.co/p/facebook-kansas-reflector-links-banned)
 
 I now have a more detailed understanding of what is going on.  I
-am not in fact placated by this.
+can't decide if this is worse than what I had guessed.  I think so.
+
+----------------------------------------------------------------------------
+
+## Update 2
+
+Some time has passed.  The aforementioned travesty has unsurprisingly led to no
+significant fallout.  Most of my friends are still on FB, presumably by force
+of habit or laziness.
+
+Thus I have a predicament.  I worry that losing touch with my friends (by
+completely eschewing the problematic FB platform in favor of newer, better,
+open distributed platforms), is worse than, say, partially moving to the newer
+platform but maintaining some minor presence on FB and using it to encourage
+migration and keep up with the stragglers and people unable to migrate.
+
+However, in order to still give open decentralized platforms preference, I
+will try to follow these rules:
+
+* always check open platforms first
+* if I spend 10min on open platform, spend no more than 5min on FB
+* post at least one link/day to open content onto FB (as a reminder)
+* don't write anything for FB only--always Mastodon, blog, or whatever
+* get actively involved in fediverse news and s/w development
 
 ----------------------------------------------------------------------------
 
