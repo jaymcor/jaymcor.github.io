@@ -191,7 +191,8 @@ For anyone wanting more information about the news event I linked to:
 
 ## Going Forward
 
-I will stop using Facebook until the situation improves.
+I will de-emphasize Facebook until the situation improves, and hopefully
+internalize the larger lessons about over-reliance on privatized infrastructure.
 
 I will emphasize free, open, and distributed systems such as the fediverse.
 
