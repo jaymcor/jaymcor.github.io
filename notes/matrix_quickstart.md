@@ -6,7 +6,7 @@
 
 It's pretty quick.
 
-### 1. Install Element classic (client app)
+### 1. Install Element X (client app)
 
 Choose one (or more) of the following:
 
@@ -64,7 +64,9 @@ need to).
 for email servers.  There are many different server code implementations, and
 you can run your own server on your own hardware.
 
-`matrix.org` has one of the major homeservers, usable by the public.
+`matrix.org` has one of the major homeservers, usable by the public.  At time
+of writing it was running a codebase called Synapse, but that will probably
+change.
 
 #### Links
 
@@ -77,14 +79,25 @@ to use one's preferred client without the server having to track that.
 #### Clients
 
 **Element** is the flagship client, with web, desktop, and phone versions.
+You should use `Element X`, the faster and better latest version.  Element
+Classic will be phased out soon.  There is also Element Pro for organizations.
 
-There are many *other clients*: Element X, Cinny, Schildichat, FluffyChat,
-NeoChat, Nheko, Fractal, Hydrogen Web, Gomuks, Syphon, and lots more.
+There are many *other clients*: Cinny, Schildichat, FluffyChat, NeoChat, Nheko,
+Fractal, Hydrogen Web, Gomuks, Syphon, and so many more.
 
 There are also *plugins* for several general purpose chat clients like WeeChat,
 Pidgin, Finch, Thunderbird, and more.
 
 You can also think of *gateways* (e.g. with IRC or Discord) to be a form of client, if you prefer to use these as your daily user interface.
+
+#### Beeper
+
+Here's a cool hack: if you are using Beeper (a chat aggregator app supporting
+discord, whatsapp, signal, linkedin, googlechat, slack, etc) then you are
+already using matrix under the hood, and you already have a matrix client in
+the form of Beeper, and a matrix user address, which is `@you:beeper.com`.
+This user address can be invited into any matrix chat room, and it just works.
+So you can use Beeper as both your client and your user address.
 
 #### Why so many choices?
 

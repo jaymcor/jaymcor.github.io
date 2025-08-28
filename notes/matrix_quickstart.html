@@ -29,8 +29,8 @@
 <hr />
 <h2 id="quickstart">Quickstart</h2>
 <p>It’s pretty quick.</p>
-<h3 id="install-element-classic-client-app">1. Install Element classic
-(client app)</h3>
+<h3 id="install-element-x-client-app">1. Install Element X (client
+app)</h3>
 <p>Choose one (or more) of the following:</p>
 <ul>
 <li><a href="https://app.element.io/">Browser app</a></li>
@@ -93,7 +93,8 @@ servers. Analogous to SMTP for email servers. There are many different
 server code implementations, and you can run your own server on your own
 hardware.</p>
 <p><code>matrix.org</code> has one of the major homeservers, usable by
-the public.</p>
+the public. At time of writing it was running a codebase called Synapse,
+but that will probably change.</p>
 <h4 id="links">Links</h4>
 <p><code>matrix.to</code> is for universal link representation for
 users, rooms, and events, until such time as <code>matrix:</code> URI
@@ -103,15 +104,25 @@ sign up, and to use one’s preferred client without the server having to
 track that.</p>
 <h4 id="clients">Clients</h4>
 <p><strong>Element</strong> is the flagship client, with web, desktop,
-and phone versions.</p>
-<p>There are many <em>other clients</em>: Element X, Cinny, Schildichat,
+and phone versions. You should use <code>Element X</code>, the faster
+and better latest version. Element Classic will be phased out soon.
+There is also Element Pro for organizations.</p>
+<p>There are many <em>other clients</em>: Cinny, Schildichat,
 FluffyChat, NeoChat, Nheko, Fractal, Hydrogen Web, Gomuks, Syphon, and
-lots more.</p>
+so many more.</p>
 <p>There are also <em>plugins</em> for several general purpose chat
 clients like WeeChat, Pidgin, Finch, Thunderbird, and more.</p>
 <p>You can also think of <em>gateways</em> (e.g. with IRC or Discord) to
 be a form of client, if you prefer to use these as your daily user
 interface.</p>
+<h4 id="beeper">Beeper</h4>
+<p>Here’s a cool hack: if you are using Beeper (a chat aggregator app
+supporting discord, whatsapp, signal, linkedin, googlechat, slack, etc)
+then you are already using matrix under the hood, and you already have a
+matrix client in the form of Beeper, and a matrix user address, which is
+<code>@you:beeper.com</code>. This user address can be invited into any
+matrix chat room, and it just works. So you can use Beeper as both your
+client and your user address.</p>
 <h4 id="why-so-many-choices">Why so many choices?</h4>
 <p>Because it’s an open system. Some components will be better, some
 worse, but the point is you get to choose.</p>
