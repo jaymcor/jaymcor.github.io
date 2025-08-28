@@ -6,7 +6,7 @@
 
 It's pretty quick.
 
-### 1. Install Element X (client app)
+### 1. Install Element X (client app) or use your browser
 
 Choose one (or more) of the following:
 
