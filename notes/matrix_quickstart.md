@@ -6,7 +6,7 @@
 
 It's pretty quick.
 
-### 1. Install Element X (client app) or use your browser
+### 1. Install Element (client app) or use your browser
 
 Choose one (or more) of the following:
 
@@ -98,6 +98,12 @@ already using matrix under the hood, and you already have a matrix client in
 the form of Beeper, and a matrix user address, which is `@you:beeper.com`.
 This user address can be invited into any matrix chat room, and it just works.
 So you can use Beeper as both your client and your user address.
+
+#### Spaces
+
+A space is just a collection of rooms for an organization--familiar idea.  If
+you invite someone to a space, they will see all the rooms in the space, which
+they can join as needed.  Note: they don't automatically join all the rooms.
 
 #### Why so many choices?
 
